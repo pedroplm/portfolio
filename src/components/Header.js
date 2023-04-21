@@ -1,6 +1,6 @@
 import React from 'react';
 //images
-import Logo from "../assets/logo-pedro-removebg-preview.png";
+import Logo from "../assets/pedro-logo-animado-bg-unscreen.gif";
 
 
 const Header = () => {
