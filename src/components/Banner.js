@@ -15,13 +15,13 @@ const Banner = () => {
       className="min-h-[90h] lg:min-h-[60vh] flex items-center"
       id="home"
     >
-      <div class="container mx-auto">
+      <div className="container mx-auto">
         <div className="flex flex-col gap-y-8 lg:flex-row lg:items-center lg:gap-x-5">
           <div className="flex-1 text-center font-secondary lg:text-left">
             <h1 className="text-[40px] pb-5 font-bold leading-[0.8]">
               PEDRO <span>PALOMO</span>
             </h1>
-            <div class="mb-6 text-[28px]  font-semibold leading-[1]">
+            <div className="mb-6 text-[28px]  font-semibold leading-[1]">
               <span>Sou um </span>
               <TypeAnimation
                 sequence={[
@@ -57,7 +57,7 @@ const Banner = () => {
             </div>
           </div>
           <div className="hidden lg:flex flex-1 max-w-[320px]">
-            <img class="rounded-full" src={Image} alt="my face" />
+            <img className="rounded-full" src={Image} alt="my face" />
           </div>
         </div>
       </div>
