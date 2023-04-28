@@ -2,10 +2,15 @@ import React, { useState } from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
-//images
-import Image from "../assets/profile-pic.jpg";
 //icons
-import { FaGithub, FaFolderOpen, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaReact, FaNodeJs } from "react-icons/fa";
+import { DiCss3, DiHtml5 } from "react-icons/di";
+import {
+  SiTailwindcss,
+  SiJavascript,
+  SiPython,
+  SiBootstrap,
+} from "react-icons/si";
 
 const About = () => {
   const responsive = {
@@ -41,7 +46,7 @@ const About = () => {
           </h3>
           <img src="" alt=""></img>
           <div>
-            <h2 className="text-center text-[40px] pt-20 pb-5 font-bold leading-[0.8]">
+            <h2 className="text-center text-[40px] pt-20 font-bold leading-[0.8]">
               Skills
             </h2>
             <Carousel
@@ -51,23 +56,43 @@ const About = () => {
               responsive={responsive}
               infinite={true}
               autoPlay={true}
-              className="skill-slider rounded-lg h-[400px]"
+              className="skill-slider rounded-lg h-[300px]"
             >
-              <div className="flex flex-col items-center justify-between content-center ">
-                <img src={Image} alt="" className="w-[50px] rounded-lg" />
+              <div className="flex flex-col items-center justify-between content-center">
+                <FaReact className="w-[50px] h-[60px] pb-2" />
+                <h5>React</h5>
+              </div>
+              <div className="flex flex-col items-center justify-center content-center">
+                <FaGithub className="w-[50px] h-[60px] pb-2" />
                 <h5>Github</h5>
               </div>
               <div className="flex flex-col items-center justify-center content-center">
-                <FaGithub />
-                <h5>Github</h5>
+                <FaNodeJs className="w-[50px] h-[60px] pb-2" />
+                <h5>Node</h5>
               </div>
               <div className="flex flex-col items-center justify-center content-center">
-                <FaGithub />
-                <h5>Github</h5>
+                <DiCss3 className="w-[50px] h-[60px] pb-2" />
+                <h5>CSS3</h5>
               </div>
               <div className="flex flex-col items-center justify-center content-center">
-                <FaGithub />
-                <h5>Github</h5>
+                <DiHtml5 className="w-[50px] h-[60px] pb-2" />
+                <h5>HTML5</h5>
+              </div>
+              <div className="flex flex-col items-center justify-center content-center">
+                <SiTailwindcss className="w-[50px] h-[60px] pb-2" />
+                <h5>Tailwind</h5>
+              </div>
+              <div className="flex flex-col items-center justify-center content-center">
+                <SiJavascript className="w-[50px] h-[60px] pb-2" />
+                <h5>Javascript</h5>
+              </div>
+              <div className="flex flex-col items-center justify-center content-center">
+                <SiPython className="w-[50px] h-[60px] pb-2" />
+                <h5>Python</h5>
+              </div>
+              <div className="flex flex-col items-center justify-center content-center">
+                <SiBootstrap className="w-[50px] h-[60px] pb-2" />
+                <h5>Bootstrap</h5>
               </div>
             </Carousel>
           </div>
