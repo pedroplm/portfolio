@@ -56,7 +56,7 @@ const Banner = () => {
               </a>
             </div>
           </div>
-          <div className="hidden lg:flex flex-1 max-w-[320px]">
+          <div className="hidden lg:flex flex-1 flex-col items-end">
             <img className="rounded-full" src={Image} alt="my face" />
           </div>
         </div>

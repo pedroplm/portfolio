@@ -1,6 +1,6 @@
 import React from "react";
 //images
-import Logo from "../assets/pedro-logo-animado-bg-unscreen.gif";
+import Logo from "../assets/pedro-logo-animado-bg-1--unscreen.gif";
 
 const Header = () => {
   return (
@@ -10,8 +10,8 @@ const Header = () => {
           {/* logo */}
           <a to="contact">
             <img
-              alt="PT:Meu nome, Pedro Palomo, dentro de um triangulo. EN: My name, Pedro Palomo inside a black triangle"
-              className="w-[200px]"
+              alt="PT: Meu nome, Pedro Palomo, dentro de um triangulo. EN: My name, Pedro Palomo inside a black triangle"
+              className="w-[150px]"
               src={Logo}
             />
           </a>
