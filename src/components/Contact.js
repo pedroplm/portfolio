@@ -1,8 +1,32 @@
-import React from "react";
+import React, { useRef } from "react";
+
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_x7dmigv",
+        "template_7xlzvhb",
+        form.current,
+        "XIuk4ha9lL-cW9uXH"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
   return (
     <section className="lg:section py-16" id="contact">
+      <script src="https://smtpjs.com/v3/smtp.js"></script>
       <div class="container mx-auto">
         <div className="flex flex-col">
           {/* text */}
@@ -17,22 +41,33 @@ const Contact = () => {
             </div>
           </div>
           {/* form */}
-          <form className="flex-1 border rounded-2xl flex flex-col gap-y-6 pb-24 p-6">
+          <form
+            className="flex-1 border rounded-2xl flex flex-col gap-y-6 pb-24 p-6"
+            ref={form}
+            onSubmit={sendEmail}
+          >
             <input
               type="text"
               className="bg-transparent border-b py-3 outline-none w-full placeholder:text-white focus:border-accent transition-all"
               placeholder="Nome"
+              name="user_name"
             />
             <input
               type="text"
               className="bg-transparent border-b py-3 outline-none w-full placeholder:text-white focus:border-accent transition-all"
               placeholder="E-mail"
+              name="user_email"
             />
             <textarea
               placeholder="Mensagem"
+              name="message"
               className="mb-12 resize-none bg-transparent border-b py-12 outline-none w-full placeholder:text-white focus:border-accent transition-all"
             ></textarea>
-            <button className="btn btn-lg">Enviar Mensagem</button>
+            <input
+              className="btn btn-lg"
+              type="submit"
+              value="Enviar Mensagem"
+            />
           </form>
         </div>
       </div>

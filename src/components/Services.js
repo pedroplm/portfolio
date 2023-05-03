@@ -24,16 +24,18 @@ const Services = () => {
 
   return (
     <section className="section" id="services">
-      <div className="container mx-auto">
+      <div className="container mx-auto mb-[20px]">
         <div className="flex flex-col lg:flex-row">
           {/* text and image */}
           <div className="flex-1  mb-12 lg:mb-0">
-            <h2 className="h2 text-accent mb-6">O que eu faço?</h2>
-            <h3 className="h3 max-w-[455px] mb-16">
+            <h2 className="h2 text-accent mb-6 lg:text-left text-center">
+              O que eu faço?
+            </h2>
+            <h3 className="h3 max-w-[455px] sm:max-w-full mb-16 text-left lg:text-left text-center ">
               Sou um estudante de front-end, procurando minha primeira
               oportunidade de emprego.
             </h3>
-            <button className="btn btn-sm">Meus Projetos</button>
+            <button className="btn btn-sm mx-auto">Meus Projetos</button>
           </div>
           {/* services*/}
           <div className="flex-1">
@@ -55,12 +57,15 @@ const Services = () => {
                     </div>
                     <div className="flex flex-col flex-1 items-end">
                       <a
-                        href="#"
+                        href="https://pedroplm.github.io/r2d-2/"
                         className="btn w-9 h-9 mb-[42px] flex justify-center items-center"
                       >
                         <BsArrowUpRight />
                       </a>
-                      <a href="#" className="text-gradient text-sm">
+                      <a
+                        href="https://github.com/pedroplm"
+                        className="text-gradient text-sm"
+                      >
                         {link}
                       </a>
                     </div>

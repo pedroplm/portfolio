@@ -25,14 +25,17 @@ const Work = () => {
           >
             {/* text */}
             <div>
-              <h2 className="h2 leading-tight text-accent">Trabalhos</h2>
-              <p className="max-w-sm mb-16">
+              <h2 className="h2 leading-tight text-accent text-center lg:text-left">
+                Trabalhos
+              </h2>
+              <p className=" mb-16 text-center lg:text-left">
                 Veja meus ultimos trabalhos, me acompanhe no LinkedIn
               </p>
               <a
                 href="https://www.linkedin.com/in/pedro-palomo-ti"
                 target="_blank"
                 rel="noopener noreferrer"
+                className="flex justify-center lg:justify-start"
               >
                 <button className="btn btn-sm">Meu LinkedIn</button>
               </a>
@@ -66,7 +69,7 @@ const Work = () => {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: true }}
-            className="flex-1 flex flex-col gap-y-10"
+            className="flex-1 flex flex-col md:gap-y-9 gap-y-12"
           >
             {/* ---------------- Image Cards ----------------------*/}
             <a

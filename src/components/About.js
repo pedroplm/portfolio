@@ -20,12 +20,12 @@ const About = () => {
       slidesToSlide: 1, // optional, default to 1.
     },
     tablet: {
-      breakpoint: { max: 1024, min: 464 },
-      items: 2,
+      breakpoint: { max: 1024, min: 500 },
+      items: 3,
       slidesToSlide: 1, // optional, default to 1.
     },
     mobile: {
-      breakpoint: { max: 464, min: 0 },
+      breakpoint: { max: 500, min: 0 },
       items: 1,
       slidesToSlide: 1, // optional, default to 1.
     },
@@ -34,7 +34,7 @@ const About = () => {
     <section className="section" id="about">
       <div className="container mx-auto">
         <div>
-          <h2 className="text-[40px] pt-5 pb-5 font-bold leading-[0.8]">
+          <h2 className="text-[40px] pt-5 pb-5 font-bold leading-[0.8] lg:text-left text-center">
             Sobre mim
           </h2>
           <h3>
@@ -56,6 +56,7 @@ const About = () => {
               responsive={responsive}
               infinite={true}
               autoPlay={true}
+              removeArrowOnDeviceType={["desktop", "tablet", "mobile"]}
               className="skill-slider rounded-lg h-[300px]"
             >
               <div className="flex flex-col items-center justify-between content-center">
