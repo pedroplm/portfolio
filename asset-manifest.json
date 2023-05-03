@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.8658a914.css",
-    "main.js": "/portfolio/static/js/main.a655d0e1.js",
+    "main.css": "/portfolio/static/css/main.174378d3.css",
+    "main.js": "/portfolio/static/js/main.b4286362.js",
     "static/media/pedro-logo-animado-bg-1--unscreen.gif": "/portfolio/static/media/pedro-logo-animado-bg-1--unscreen.2d0dd78b5c062b49afd9.gif",
     "static/media/site-barbearia.png": "/portfolio/static/media/site-barbearia.9c7b001f9bcbf9d8d985.png",
     "static/media/site-bg.jpg": "/portfolio/static/media/site-bg.54724d703024833ef9c6.jpg",
@@ -13,11 +13,11 @@
     "static/media/profile-pic.jpg": "/portfolio/static/media/profile-pic.3816fee8babc0833bcb8.jpg",
     "static/media/revicons.woff": "/portfolio/static/media/revicons.e8746a624ed098489406.woff",
     "index.html": "/portfolio/index.html",
-    "main.8658a914.css.map": "/portfolio/static/css/main.8658a914.css.map",
-    "main.a655d0e1.js.map": "/portfolio/static/js/main.a655d0e1.js.map"
+    "main.174378d3.css.map": "/portfolio/static/css/main.174378d3.css.map",
+    "main.b4286362.js.map": "/portfolio/static/js/main.b4286362.js.map"
   },
   "entrypoints": [
-    "static/css/main.8658a914.css",
-    "static/js/main.a655d0e1.js"
+    "static/css/main.174378d3.css",
+    "static/js/main.b4286362.js"
   ]
 }
