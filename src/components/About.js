@@ -26,7 +26,7 @@ const About = () => {
     },
     mobile: {
       breakpoint: { max: 500, min: 0 },
-      items: 1,
+      items: 2,
       slidesToSlide: 1, // optional, default to 1.
     },
   };
@@ -34,10 +34,10 @@ const About = () => {
     <section className="section" id="about">
       <div className="container mx-auto">
         <div>
-          <h2 className="text-[40px] pt-5 pb-5 font-bold leading-[0.8] lg:text-left text-center">
+          <h2 className="text-[36px] lg:text-[40px] pt-5 pb-5 font-bold leading-[0.8] lg:text-left text-center">
             Sobre mim
           </h2>
-          <h3>
+          <h3 className="text-[16px] lg:text-[18px]">
             Eu sou um desenvolvedor que ama tanto front-end como back-end,
             estudando para me tornar full-stack. Tenho um foco maior em
             front-end, usando tecnologias como: CSS3, HTML5, Javascript,
@@ -46,7 +46,7 @@ const About = () => {
           </h3>
           <img src="" alt=""></img>
           <div>
-            <h2 className="text-center text-[40px] pt-20 font-bold leading-[0.8]">
+            <h2 className="text-center text-[36px] lg:text-[40px] pt-20 font-bold leading-[0.8]">
               Skills
             </h2>
             <Carousel
