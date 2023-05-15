@@ -8,7 +8,7 @@ import { fadeIn } from "../variants";
 //img
 import Img1 from "../assets/site-barbearia.png";
 import Img2 from "../assets/site-r2d2.png";
-import Img3 from "../assets/site-codificador.png";
+import Img3 from "../assets/palomos-shop-grid.png";
 import Img4 from "../assets/site-cv-2000.png";
 
 const Work = () => {
@@ -73,14 +73,14 @@ const Work = () => {
           >
             {/* ---------------- Image Cards ----------------------*/}
             <a
-              href="https://pedroplm.github.io/r2d-2/"
+              href="https://pedroplm.github.io/palomos-shop/"
               target="_blank"
               rel="noopener noreferrer"
             >
               <Card
                 img={Img3}
-                text="Codificador Alura"
-                title="Projeto de codificação"
+                text="Palomo's Shop"
+                title="Projeto Front-end Ecommerce"
               />
             </a>
             <a
