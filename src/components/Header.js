@@ -13,7 +13,7 @@ const Header = () => {
           <a href="contact" to="contact">
             <img
               alt="PT: Meu nome, Pedro Palomo, dentro de um triangulo. EN: My name, Pedro Palomo inside a black triangle"
-              className="w-[150px]"
+              className="w-[100px] lg:w-[150px]"
               src={Logo}
             />
           </a>
@@ -25,7 +25,9 @@ const Header = () => {
             spy={true}
             className="cursor-pointer bg-none flex items-center justify-center"
           >
-            <button className="btn btn-sm">Trabalhe comigo</button>
+            <button className="btn btn-sm w-[100px] text-[12px] lg:text-[16px] lg:w-[200px] ">
+              Trabalhe comigo
+            </button>
           </Link>
         </div>
       </div>

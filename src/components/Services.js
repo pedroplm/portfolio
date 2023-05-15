@@ -1,5 +1,8 @@
 import React from "react";
+
 import { BsArrowUpRight } from "react-icons/bs";
+
+import { Link } from "react-scroll";
 
 const Services = () => {
   const servicesData = [
@@ -27,15 +30,25 @@ const Services = () => {
       <div className="container mx-auto mb-[20px]">
         <div className="flex flex-col lg:flex-row">
           {/* text and image */}
-          <div className="flex-1  mb-12 lg:mb-0">
+          <div className="flex-col justify-center items-center flex-col lg:flex-1 lg:flex-row  mb-12 lg:mb-0">
             <h2 className="h2 text-accent mb-6 lg:text-left text-center">
               O que eu faço?
             </h2>
-            <h3 className="h3 max-w-[455px] sm:max-w-full mb-16 text-left lg:text-left text-center ">
+            <h3 className="lg:h3 max-w-[455px] sm:max-w-full mb-16 text-center lg:text-left ">
               Sou um estudante de front-end, procurando minha primeira
               oportunidade de emprego.
             </h3>
-            <button className="btn btn-sm mx-auto">Meus Projetos</button>
+            <Link
+              to="work"
+              activeClass="deactive"
+              smooth={true}
+              spy={true}
+              className="cursor-pointer bg-none flex items-center justify-center lg:items-start lg:justify-start"
+            >
+              <button className="btn btn-sm text-[16px] lg:text-[18px]">
+                Projetos
+              </button>
+            </Link>
           </div>
           {/* services*/}
           <div className="flex-1">
@@ -53,7 +66,9 @@ const Services = () => {
                       <h4 className="text-[20px] tracking-wider font-semibold mb-5">
                         {name}
                       </h4>
-                      <p className="leading-tight">{description}</p>
+                      <p className="leading-tight text-[14px] pr-5 lg:text-[18px]">
+                        {description}
+                      </p>
                     </div>
                     <div className="flex flex-col flex-1 items-end">
                       <a

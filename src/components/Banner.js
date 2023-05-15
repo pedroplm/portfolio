@@ -21,10 +21,10 @@ const Banner = () => {
       <div className="container mx-auto">
         <div className="flex flex-col gap-y-8 lg:flex-row lg:items-center lg:gap-x-5">
           <div className="flex-1 text-center font-secondary lg:text-left">
-            <h1 className="text-[40px] pb-5 font-bold leading-[0.8] sm:py-10">
-              PEDRO <span>PALOMO</span>
+            <h1 className="text-[36px] lg:text-[40px] pb-5 font-bold leading-[0.8] sm:py-10">
+              Pedro <span>Palomo</span>
             </h1>
-            <div className="mb-6 text-[28px]  font-semibold leading-[1]">
+            <div className="mb-6 text-[28px] font-semibold leading-[1]">
               <span>Sou um </span>
               <TypeAnimation
                 sequence={[
@@ -38,7 +38,7 @@ const Banner = () => {
                 repeat={Infinity}
               />
             </div>
-            <p className="mb-8 text-justify max-w-lg mx-auto lg:mx-0 sm:py-10">
+            <p className="mb-8 text-justify text-[16px] lg:text-[18px] max-w-lg mx-auto lg:mx-0 sm:py-10">
               Desenvolvedor front-end (CSS3, HTML5, Javascript, React,
               Bootstrap, Tailwind), back-end (Python, Node, SQL, MongoDB).
             </p>

@@ -32,10 +32,10 @@ const Contact = () => {
           {/* text */}
           <div>
             <div>
-              <h4 className="text-xl uppercase text-accent font-medium mb-2 tracking-wide">
+              <h4 className="text-md lg:text-xl uppercase text-accent font-medium mb-2 tracking-wide">
                 Entre em contato
               </h4>
-              <h2 className="text-[45px] lg:text-[80px] leading-none mb-12 mr-5">
+              <h2 className="text-[26px] lg:text-[76px] leading-none mb-12 mr-5">
                 Vamos trabalhar juntos
               </h2>
             </div>
