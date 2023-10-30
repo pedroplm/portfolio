@@ -51,16 +51,21 @@ const Contact = () => {
               className="bg-transparent border-b py-3 outline-none w-full placeholder:text-white focus:border-accent transition-all"
               placeholder="Nome"
               name="user_name"
+              required
             />
             <input
-              type="text"
+              type="email"
               className="bg-transparent border-b py-3 outline-none w-full placeholder:text-white focus:border-accent transition-all"
               placeholder="E-mail"
               name="user_email"
+              required
+              pattern="[A-Za-z0-9._+-]+@[A-Za-z0-9 -]\.[a-z]{2,}"
+              
             />
             <textarea
               placeholder="Mensagem"
               name="message"
+              required
               className="mb-12 resize-none bg-transparent border-b py-12 outline-none w-full placeholder:text-white focus:border-accent transition-all"
             ></textarea>
             <input
